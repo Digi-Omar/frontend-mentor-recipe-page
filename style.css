@@ -1,0 +1,149 @@
+
+html{
+    font-family: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    color: #302d2c;
+}
+
+img{
+    width: 100%;
+    height: 100%;  
+}
+
+h1, h2{
+    font-family: "Young Serif", serif;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #854632;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+span{
+    font-weight: 900;
+    color: #5f574e;
+}
+
+ol, ul{
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e4ded8;
+}
+
+li{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+li::marker{
+    color: #854632;
+    font-weight: 900;
+}
+
+h3{
+    color: #7b284f;
+}
+
+
+.main-container{
+    padding: 30px 25px;
+    background-color: #ffffff;
+    
+}
+
+.preparation-container{
+    background-color: #fff5fa;
+    padding: 25px;
+    margin-bottom: 20px;
+    
+}
+
+.preparation-container ul{
+    border-bottom: none;
+    margin-bottom: 0;
+
+}
+
+.preparation-container ul li::marker{
+    color: #7b284f;
+}
+
+
+.nutri-values{
+    display: grid;
+    grid-template-columns: 100px 1fr  1fr;
+    border-bottom: 1px solid #e4ded8;
+}
+    
+.nutri-values .nutrients{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.nutri-values p{
+    margin-top: 15px;
+}
+
+.nutri-values span{
+    color: #854632;
+}
+
+
+.attribution {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: #7b284f;
+    text-decoration: none;
+  }
+
+
+
+
+@media (min-width: 400px){
+    body{
+        background-color: #e4ded8;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .img-container{
+        padding: 20px;
+    }
+
+    .container{
+        width: 500px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    } 
+    
+    .attribution{
+        visibility: hidden;
+    }
+
+}
